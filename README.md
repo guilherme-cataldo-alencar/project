@@ -1,4 +1,59 @@
-# YOUR PROJECT TITLE
-#### Video Demo:  <https://youtu.be/btiDorzJ45k>
-#### Description: Hello CS50 my name is Guilherme and my project is a simple curriculum generator where there is a user registration system, login and logout. The main page is where you enter your information and download a pdf with a ready-made resume. the project backend was made with python and flask, the front end was made using bootstrap. The registration page has a connection to the database and to connect I used the SQLAlchemy library where after trying to use sqlite3 several times without success, I ended up finding on the internet a way to connect the flask and a database. As for generating the curriculum, it was a very difficult part because I tested several pdf generation libraries but they were all very difficult, I even thought about changing projects but luckily I found the pdfkit library where in the library it said that I could create pdfs using html and css that It impressed me because I thought it wasn't possible. Then came the other challenge to make a code to generate an html to become a pdf, and after days of work I finally managed to use a string where I passed this string to the pdfkit and become a pdf. This project was really cool to do because I learned to read the documentation of the libraries, because a lot of things were hard to find in places other than the library's doc. this is cs50; printf("Thank you for content");return 0;
+**Cs50 Final Project: Curriculum Creator** 
+
+The project is a simple curriculum generator where you enter your information and the site creates a pdf formatted with a great curriculum.
+
+***Technologies used***
+
+ - Flask
+ - pdfkit
+ - python
+ - bootstrap
+ - SQLAlchemy
+ - Html
+ - Css
+ - biblioteca os 
+    <hr>
+    
+***How the project works:***
+
+1. You register on the site
+2. Login access the curriculum creator
+3. Inside the curriculum creator you have to insert all the necessary information
+4. After completing the information click download
+Once you click on download you will download a pdf with your resume ready
+
+<hr>
+
+***Routes***
+
+The "/login" and "/register" routes do not need to be logged in, and to do this I included a helpers.py file with a decorator function called login_required and I added @login_required in all the routes where it is necessary to be logged in
+
+To download the pdf you are directed to the route "/create_page" this route will get all the information from the curriculum creator form and will call a function called make_pdf (function included in the helpers.py file) and then you are directed to the thanks route where sera sends to download the pdf using the send_file() function
+
+<hr>
+
+***Database***
+
+To make the registration system, I had to use a database "database.db" I tried for a long time to use sqlite3 but I said so I looked for something to connect flask with a database until I finally found SQLAlchemy a simple library where you can insert things into a database without using the sql language (at first I thought it was strange), but it was very difficult to figure out how to configure it because the documentation is a little confusing, but in the end everything is ok.
+
+<hr>
+
+***How to use***
+
+To use the curriculum generator, you will need:
+
+- Flask -> pip install flask
+- pdfkit -> pip install pdfkit
+- others
+
+*Run*
+
+   ```
+$ export FLASK_APP=app.py
+$ flask run
+```
+
+***Video URL***
+
+<https://youtu.be/btiDorzJ45k>
 
