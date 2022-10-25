@@ -2,6 +2,7 @@
     FAZER SISTEMA DE ADICIONAR CURSOS (ULTIMA PARTE)
 """
 
+import cs50
 import os
 from flask import Flask, send_file, request, render_template, redirect, url_for, session
 from flask_session import Session
