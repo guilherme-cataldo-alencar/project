@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block main %}
+
+	<form action="/create_page" method="POST">
+
+		<!--Personal contact -->
+		<div>
+
+			<h3 class="text-center">Personal Contact</h3>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputEmail" class="form-label">Email</label>
+					<input type="email" class="form-control" id="inputEmail" name="email">
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputPhone" class="form-label">Phone</label>
+					<input type="number" class="form-control" id="inputPhone" name="phone">
+				</div>
+			</div>
+
+		</div>
+
+		<!--Personal Information-->
+		<div>
+			<h3 class="text-center">Personal Information</h3>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputName" class="form-label">Name</label>
+					<input type="text" class="form-control" id="inputName" name="name">
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputDate" class="form-label">Birthday</label>
+					<input type="date" class="form-control" id="inputDate" name="birthday">
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputCountry" class="form-label">Country</label>
+					<input type="text" class="form-control" id="inputCountry" name="country">
+				</div>
+			</div>
+			
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputState" class="form-label">State</label>
+					<input type="text" class="form-control" id="inputState" name="state">
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputCity" class="form-label">City</label>
+					<input type="text" class="form-control" id="inputCity" name="city">
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputDisctrict" class="form-label">Disctrict</label>
+					<input type="text" class="form-control" id="inputDisctrict" name="disctrict">
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<div class="col-sm-5 mx-auto">
+					<label for="inputStreet" class="form-label">Street</label>
+					<input type="text" class="form-control" id="inputStreet" name="street">
+				</div>
+			</div>
+
+		</div>
+
+		<!--Objective-->
+		<div>
+			<h3 class="text-center">Objective</h3>
+
+			<div class="mb-3 col-sm-5 mx-auto">
+				<label for="textAreaObjective" class="form-label">Objective</label>
+				<textarea class="form-control mx-auto" id="textAreaObjective" name="objective"></textarea>
+			</div>
+		</div>
+			
+		<!--Scholarity-->
+		<div>
+			<h3 class="text-center">Scholarity</h3>
+			<div class="mb-3 col-sm-5 mx-auto">
+				<input type="text" class="form-control" id="exampleFormControlInput1" name="scholarity">
+			</div>
+
+			<div class="mb-3 col-sm-5 mx-auto">
+				<select name="level" class="form-select" aria-label="Default select example">
+					<option value="Middle School Studying">Middle School Studying</option>
+					<option value="Middle School Complete">Middle School Complete</option>
+					<option value="High School Studying">High School Studying</option>
+					<option value="High School Complete">High School Complete</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="d-grid gap-2 col-3 mx-auto">
+			<button type="submit" class="btn btn-primary">download</button>
+		</div>
+		
+	</form>
+
+	<h3>{{name}}</h3>
+
+{% endblock %}

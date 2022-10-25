@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+	Login
+{% endblock %}
+
+{% block main %}
+
+    <h2 class="text-center">Login</h2>
+
+    <form action="/login" method="post">
+        <div class="mb-3 col-sm-5 mx-auto">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <input type="text" class="form-control" id="inputEmail" name="email" placeholder="Email">
+        </div>
+
+        <div class="mb-3 col-sm-5 mx-auto">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password">
+        </div>
+
+        <div class="d-grid gap-1 col-1 mx-auto">
+            <button type="submit" class="btn btn-primary mb-3">Login</button>
+        </div>
+    </form>
+    
+{% endblock %}
