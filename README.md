@@ -11,7 +11,9 @@ The project is a simple curriculum generator where you enter your information an
  - SQLAlchemy
  - Html
  - Css
- - biblioteca os 
+ -  os
+ - python3
+  
     <hr>
     
 ***How the project works:***
@@ -56,4 +58,28 @@ $ flask run
 ***Video URL***
 
 <https://youtu.be/btiDorzJ45k>
+
+***Things that can be improved in the project:***
+
+- I believe that one of the things that can be improved is the registry system because it doesn't encrypt the password and doesn't even check if it has any malicious code, so you can insert a sql injection or an xss
+
+- Another thing that can be added is a system to see your resume in real time, because that way it would be easier for the user to know what is happening
+
+- The website design could also be better.
+
+- Could create a system for each curriculum created the user would have to pay $1
+
+- It can also be improved by creating a presentation screen of the teaching program that works
+
+- I can also improve the registration system because it can be inserted an xss.
+
+- You could add a system to put your professional experience because that would make the curriculum much better
+
+- Or a system to add all the courses you've taken
+
+- Or add a system to put your linkedin
+
+- I could also create a blog to teach you how to put together a good curriculum
+
+- Among other things
 
